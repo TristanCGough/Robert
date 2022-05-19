@@ -37,10 +37,11 @@ for file in range(listlength):
     recheck = f"{new_file}" in listdir('PDF')
     if recheck == True:
         print("name taken")
+        #feel free to delete duplicate files
+        #remove(f"PDF/{files[file]}")
     elif status == True:
         rename(f"PDF/{files[file]}",f"PDF/{ORDER}-{INV}.pdf")
         print(f"Renamed {files[file]} to {ORDER}-{INV}.pdf")
-        #remove(f"PDF/{files[file]}")
 
     if test == True:
         print(files[file])
